@@ -188,7 +188,7 @@ local function WKDTKV_fake_script() -- VKS.LocalScript
 	--[ DISCORD ]--
 	
 	DC.MouseButton1Click:Connect(function()
-		setclipboard(https://discord.gg/ZwejsJT7sq)
+		setclipboard("https://discord.gg/ZwejsJT7sq")
 	end)
 	
 	--[ VOTE-KICK ]--
