@@ -1,0 +1,273 @@
+local VKS = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local KickBox = Instance.new("TextBox")
+local Kick = Instance.new("TextLabel")
+local KickButton = Instance.new("TextButton")
+local check = Instance.new("ImageButton")
+local Detail = Instance.new("Frame")
+local AntiCheat = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Hide = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Discord = Instance.new("TextButton")
+
+--Properties:
+
+VKS.Name = "VKS"
+VKS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+VKS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = VKS
+Frame.BackgroundColor3 = Color3.fromRGB(46, 45, 63)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0671462864, 0, 0.19284603, 0)
+Frame.Size = UDim2.new(0, 270, 0, 250)
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.fromRGB(31, 30, 43)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 270, 0, 30)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "VOTE-KICK SIMULATOR"
+Title.TextColor3 = Color3.fromRGB(223, 223, 223)
+Title.TextSize = 20.000
+
+KickBox.Name = "KickBox"
+KickBox.Parent = Frame
+KickBox.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
+KickBox.BorderColor3 = Color3.fromRGB(158, 158, 160)
+KickBox.Position = UDim2.new(0.0444444455, 0, 0.240291908, 0)
+KickBox.Size = UDim2.new(0, 200, 0, 25)
+KickBox.Font = Enum.Font.SourceSans
+KickBox.PlaceholderText = "USERNAME"
+KickBox.Text = ""
+KickBox.TextColor3 = Color3.fromRGB(223, 223, 223)
+KickBox.TextSize = 18.000
+KickBox.TextWrapped = true
+
+Kick.Name = "Kick"
+Kick.Parent = KickBox
+Kick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Kick.BackgroundTransparency = 1.000
+Kick.BorderSizePixel = 0
+Kick.Position = UDim2.new(0.109629638, 0, -0.831428528, 0)
+Kick.Size = UDim2.new(0, 200, 0, 14)
+Kick.Font = Enum.Font.SourceSans
+Kick.Text = "VOTE-KICK"
+Kick.TextColor3 = Color3.fromRGB(176, 176, 176)
+Kick.TextSize = 14.000
+
+KickButton.Name = "KickButton"
+KickButton.Parent = Frame
+KickButton.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
+KickButton.BorderColor3 = Color3.fromRGB(173, 173, 174)
+KickButton.Position = UDim2.new(0.84074074, 0, 0.240291908, 0)
+KickButton.Size = UDim2.new(0, 25, 0, 25)
+KickButton.Font = Enum.Font.SourceSans
+KickButton.Text = ""
+KickButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+KickButton.TextSize = 14.000
+
+check.Name = "check"
+check.Parent = KickButton
+check.BackgroundTransparency = 1.000
+check.Position = UDim2.new(-0.0199999809, 0, -0.0199999809, 0)
+check.Size = UDim2.new(0, 25, 0, 25)
+check.ZIndex = 2
+check.Image = "rbxassetid://3926305904"
+check.ImageRectOffset = Vector2.new(312, 4)
+check.ImageRectSize = Vector2.new(24, 24)
+
+Detail.Name = "Detail"
+Detail.Parent = Frame
+Detail.BackgroundColor3 = Color3.fromRGB(35, 34, 48)
+Detail.BorderColor3 = Color3.fromRGB(161, 161, 164)
+Detail.Position = UDim2.new(0.0212962963, 0, 0.144628689, 0)
+Detail.Size = UDim2.new(0, 255, 0, 63)
+Detail.ZIndex = 0
+
+AntiCheat.Name = "AntiCheat"
+AntiCheat.Parent = Frame
+AntiCheat.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
+AntiCheat.BorderColor3 = Color3.fromRGB(173, 173, 174)
+AntiCheat.Position = UDim2.new(0.122222222, 0, 0.425700009, 0)
+AntiCheat.Size = UDim2.new(0, 200, 0, 20)
+AntiCheat.Font = Enum.Font.SourceSans
+AntiCheat.Text = "DELETE KICK STUFF"
+AntiCheat.TextColor3 = Color3.fromRGB(223, 223, 223)
+AntiCheat.TextSize = 14.000
+
+TextLabel.Parent = AntiCheat
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 1.35000002, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 14)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Doesn't disable the anti-cheat."
+TextLabel.TextColor3 = Color3.fromRGB(163, 163, 164)
+TextLabel.TextSize = 14.000
+TextLabel.TextYAlignment = Enum.TextYAlignment.Top
+
+Hide.Name = "Hide"
+Hide.Parent = Frame
+Hide.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
+Hide.BorderColor3 = Color3.fromRGB(173, 173, 174)
+Hide.Position = UDim2.new(0.129629627, 0, 0.616590381, 0)
+Hide.Size = UDim2.new(0, 200, 0, 20)
+Hide.Font = Enum.Font.SourceSans
+Hide.Text = "HIDE"
+Hide.TextColor3 = Color3.fromRGB(223, 223, 223)
+Hide.TextSize = 14.000
+
+TextLabel_2.Parent = Hide
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 1.35000002, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 14)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Destroys your character."
+TextLabel_2.TextColor3 = Color3.fromRGB(163, 163, 164)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.17037037, 0, 0.916071475, 0)
+TextLabel_3.Size = UDim2.new(0, 177, 0, 20)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Made by Clay#1303"
+TextLabel_3.TextColor3 = Color3.fromRGB(223, 223, 223)
+TextLabel_3.TextSize = 14.000
+
+Discord.Name = "Discord"
+Discord.Parent = Frame
+Discord.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
+Discord.BorderColor3 = Color3.fromRGB(173, 173, 174)
+Discord.Position = UDim2.new(0.129629627, 0, 0.808590412, 0)
+Discord.Size = UDim2.new(0, 200, 0, 20)
+Discord.Font = Enum.Font.SourceSans
+Discord.Text = "COPY DISCORD INVITE"
+Discord.TextColor3 = Color3.fromRGB(223, 223, 223)
+Discord.TextSize = 14.000
+
+-- Scripts:
+
+local function WKDTKV_fake_script() -- VKS.LocalScript 
+	local script = Instance.new('LocalScript', VKS)
+
+	local Frame = script.Parent.Frame
+	local AC = Frame.AntiCheat
+	local HD = Frame.Hide
+	local DC = Frame.Discord
+	local KX = Frame.KickBox
+	local KB = Frame.KickButton
+	
+	--[ ANTI-CHEAT ]--
+	
+	AC.MouseButton1Click:Connect(function()
+		game:GetService("Workspace").KickFloor:Destroy()
+		game:GetService("Workspace").KickWall:Destroy()
+		game:GetService("Workspace").System.CeilingWall:Destroy()
+	end)
+	
+	--[ HIDE ]--
+	
+	HD.MouseButton1Click:Connect(function()
+		game:GetService("Players").LocalPlayer.Character:Destroy()
+	end)
+	
+	--[ DISCORD ]--
+	
+	DC.MouseButton1Click:Connect(function()
+		setclipboard(https://discord.gg/ZwejsJT7sq)
+	end)
+	
+	--[ VOTE-KICK ]--
+	
+	KB.MouseButton1Click:Connect(function()
+		local kicked = (KX.Text)
+		while true do
+		wait()
+		local args = {
+		[1] = game:GetService("Players")[kicked]
+		}
+		workspace.System.VoteEvent:FireServer(unpack(args))
+		end
+	end)
+	
+	--[ USERNAME-GUESS ]--
+	
+	local Input = KX.Text
+	
+	function getPlrs(Input)
+		local Plrs = game.Players:GetPlayers()
+		local Results = {}
+		
+		for i,v in pairs (Plrs) do
+			if v.Name:sub(1,#Input):lower() ==  Input:lower() then
+			table.insert(Results,v.Name)
+		end
+	end
+	if #Results == 1 then
+			return Results[1]
+		else
+			return {}
+		end
+	end
+	
+	KX:GetPropertyChangedSignal("Text"):Connect(function()
+		local Players = getPlrs(KX.Text)
+	end)
+	
+	--[ DRAGGABLE ]--
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent.Frame
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(WKDTKV_fake_script)()
