@@ -12,12 +12,13 @@ local Hide = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local Discord = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
 
 --Properties:
 
 VKS.Name = "VKS"
 VKS.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-VKS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+VKS.ResetOnSpawn = false
 
 Frame.Parent = VKS
 Frame.BackgroundColor3 = Color3.fromRGB(46, 45, 63)
@@ -30,6 +31,7 @@ Title.Parent = Frame
 Title.BackgroundColor3 = Color3.fromRGB(31, 30, 43)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 270, 0, 30)
+Title.ZIndex = 2
 Title.Font = Enum.Font.SourceSansBold
 Title.Text = "VOTE-KICK SIMULATOR"
 Title.TextColor3 = Color3.fromRGB(223, 223, 223)
@@ -41,6 +43,7 @@ KickBox.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
 KickBox.BorderColor3 = Color3.fromRGB(158, 158, 160)
 KickBox.Position = UDim2.new(0.0444444455, 0, 0.240291908, 0)
 KickBox.Size = UDim2.new(0, 200, 0, 25)
+KickBox.ZIndex = 2
 KickBox.Font = Enum.Font.SourceSans
 KickBox.PlaceholderText = "USERNAME"
 KickBox.Text = ""
@@ -55,6 +58,7 @@ Kick.BackgroundTransparency = 1.000
 Kick.BorderSizePixel = 0
 Kick.Position = UDim2.new(0.109629638, 0, -0.831428528, 0)
 Kick.Size = UDim2.new(0, 200, 0, 14)
+Kick.ZIndex = 2
 Kick.Font = Enum.Font.SourceSans
 Kick.Text = "VOTE-KICK"
 Kick.TextColor3 = Color3.fromRGB(176, 176, 176)
@@ -66,6 +70,7 @@ KickButton.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
 KickButton.BorderColor3 = Color3.fromRGB(173, 173, 174)
 KickButton.Position = UDim2.new(0.84074074, 0, 0.240291908, 0)
 KickButton.Size = UDim2.new(0, 25, 0, 25)
+KickButton.ZIndex = 2
 KickButton.Font = Enum.Font.SourceSans
 KickButton.Text = ""
 KickButton.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -87,7 +92,6 @@ Detail.BackgroundColor3 = Color3.fromRGB(35, 34, 48)
 Detail.BorderColor3 = Color3.fromRGB(161, 161, 164)
 Detail.Position = UDim2.new(0.0212962963, 0, 0.144628689, 0)
 Detail.Size = UDim2.new(0, 255, 0, 63)
-Detail.ZIndex = 0
 
 AntiCheat.Name = "AntiCheat"
 AntiCheat.Parent = Frame
@@ -95,6 +99,7 @@ AntiCheat.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
 AntiCheat.BorderColor3 = Color3.fromRGB(173, 173, 174)
 AntiCheat.Position = UDim2.new(0.122222222, 0, 0.425700009, 0)
 AntiCheat.Size = UDim2.new(0, 200, 0, 20)
+AntiCheat.ZIndex = 2
 AntiCheat.Font = Enum.Font.SourceSans
 AntiCheat.Text = "DELETE KICK STUFF"
 AntiCheat.TextColor3 = Color3.fromRGB(223, 223, 223)
@@ -107,6 +112,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0, 0, 1.35000002, 0)
 TextLabel.Size = UDim2.new(0, 200, 0, 14)
+TextLabel.ZIndex = 2
 TextLabel.Font = Enum.Font.SourceSans
 TextLabel.Text = "Doesn't disable the anti-cheat."
 TextLabel.TextColor3 = Color3.fromRGB(163, 163, 164)
@@ -119,6 +125,7 @@ Hide.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
 Hide.BorderColor3 = Color3.fromRGB(173, 173, 174)
 Hide.Position = UDim2.new(0.129629627, 0, 0.616590381, 0)
 Hide.Size = UDim2.new(0, 200, 0, 20)
+Hide.ZIndex = 2
 Hide.Font = Enum.Font.SourceSans
 Hide.Text = "HIDE"
 Hide.TextColor3 = Color3.fromRGB(223, 223, 223)
@@ -131,6 +138,7 @@ TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0, 0, 1.35000002, 0)
 TextLabel_2.Size = UDim2.new(0, 200, 0, 14)
+TextLabel_2.ZIndex = 2
 TextLabel_2.Font = Enum.Font.SourceSans
 TextLabel_2.Text = "Destroys your character."
 TextLabel_2.TextColor3 = Color3.fromRGB(163, 163, 164)
@@ -143,6 +151,7 @@ TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderSizePixel = 0
 TextLabel_3.Position = UDim2.new(0.17037037, 0, 0.916071475, 0)
 TextLabel_3.Size = UDim2.new(0, 177, 0, 20)
+TextLabel_3.ZIndex = 2
 TextLabel_3.Font = Enum.Font.SourceSans
 TextLabel_3.Text = "Made by Clay#1303"
 TextLabel_3.TextColor3 = Color3.fromRGB(223, 223, 223)
@@ -154,14 +163,18 @@ Discord.BackgroundColor3 = Color3.fromRGB(60, 59, 83)
 Discord.BorderColor3 = Color3.fromRGB(173, 173, 174)
 Discord.Position = UDim2.new(0.129629627, 0, 0.808590412, 0)
 Discord.Size = UDim2.new(0, 200, 0, 20)
+Discord.ZIndex = 2
 Discord.Font = Enum.Font.SourceSans
 Discord.Text = "COPY DISCORD INVITE"
 Discord.TextColor3 = Color3.fromRGB(223, 223, 223)
 Discord.TextSize = 14.000
 
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230))}
+UIGradient.Parent = Frame
+
 -- Scripts:
 
-local function WKDTKV_fake_script() -- VKS.LocalScript 
+local function ABFYDG_fake_script() -- VKS.LocalScript 
 	local script = Instance.new('LocalScript', VKS)
 
 	local Frame = script.Parent.Frame
@@ -182,7 +195,10 @@ local function WKDTKV_fake_script() -- VKS.LocalScript
 	--[ HIDE ]--
 	
 	HD.MouseButton1Click:Connect(function()
-		game:GetService("Players").LocalPlayer.Character:Destroy()
+		while true do
+			wait()
+			game:GetService("Players").LocalPlayer.Character:Destroy()
+		end
 	end)
 	
 	--[ DISCORD ]--
@@ -270,4 +286,4 @@ local function WKDTKV_fake_script() -- VKS.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WKDTKV_fake_script)()
+coroutine.wrap(ABFYDG_fake_script)()
