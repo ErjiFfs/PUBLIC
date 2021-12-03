@@ -4,7 +4,6 @@ local Title = Instance.new("TextLabel")
 local KickBox = Instance.new("TextBox")
 local Kick = Instance.new("TextLabel")
 local KickButton = Instance.new("TextButton")
-local check = Instance.new("ImageButton")
 local Detail = Instance.new("Frame")
 local AntiCheat = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
@@ -12,7 +11,6 @@ local Hide = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local Discord = Instance.new("TextButton")
-local UIGradient = Instance.new("UIGradient")
 
 --Properties:
 
@@ -75,16 +73,6 @@ KickButton.Font = Enum.Font.SourceSans
 KickButton.Text = ""
 KickButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 KickButton.TextSize = 14.000
-
-check.Name = "check"
-check.Parent = KickButton
-check.BackgroundTransparency = 1.000
-check.Position = UDim2.new(-0.0199999809, 0, -0.0199999809, 0)
-check.Size = UDim2.new(0, 25, 0, 25)
-check.ZIndex = 2
-check.Image = "rbxassetid://3926305904"
-check.ImageRectOffset = Vector2.new(312, 4)
-check.ImageRectSize = Vector2.new(24, 24)
 
 Detail.Name = "Detail"
 Detail.Parent = Frame
@@ -169,12 +157,9 @@ Discord.Text = "COPY DISCORD INVITE"
 Discord.TextColor3 = Color3.fromRGB(223, 223, 223)
 Discord.TextSize = 14.000
 
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(230, 230, 230)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(230, 230, 230))}
-UIGradient.Parent = Frame
-
 -- Scripts:
 
-local function ABFYDG_fake_script() -- VKS.LocalScript 
+local function UUSW_fake_script() -- VKS.LocalScript 
 	local script = Instance.new('LocalScript', VKS)
 
 	local Frame = script.Parent.Frame
@@ -286,4 +271,4 @@ local function ABFYDG_fake_script() -- VKS.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ABFYDG_fake_script)()
+coroutine.wrap(UUSW_fake_script)()
